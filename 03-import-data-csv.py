@@ -11,6 +11,8 @@
 # 17:11 - update split in lamda function to a regular expression, to fix delimiter any issues
 # 27:02 - for loop through each row to print or do something with each column value
 
+# script: https://github.com/datyrlab/apache-spark/blob/master/03-import-data-csv.py
+
 # PySpark - Getting started, SparkContext & SparkSession Instances - Part 2
 # https://youtu.be/Up7q_ayhRM4
 

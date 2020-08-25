@@ -13,6 +13,8 @@
 # 41:27 - expand columns by disabling truncation... df.show(truncate=False) 
 # 42:49 - show all rows... df.show(df.count())
 
+# script: https://github.com/datyrlab/apache-spark/blob/master/05-01-pyspark-sql.py
+
 # install dependancies
 # sudo pip3 install colorama
 

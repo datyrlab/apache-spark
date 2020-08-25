@@ -9,6 +9,9 @@
 # 4:32 - create an instance for SparkContext
 # 13:22 - create an instance for SparkSession
 
+# script: https://github.com/datyrlab/apache-spark/blob/master/02-pyspark-instance-sparkcontext.py
+# script: https://github.com/datyrlab/apache-spark/blob/master/02-pyspark-instance-sparksession.py
+
 # Apache Spark - Install Spark3, PySpark3 on Ubuntu 20.04, Debian, Python 3.8 - Part 1b
 # https://youtu.be/snZvQcI2HfQ
 
@@ -17,10 +20,6 @@
 
 # https://twitter.com/datyrlab
 ######################################
-
-from colorama import init
-from colorama import Fore, Back, Style
-init(autoreset=True)
 
 from pyspark import SparkContext
 from pyspark import SparkConf

@@ -13,6 +13,8 @@
 # 24:43 - succesful result showing Mongo collection, it's schema for Twitter User Timeline data
 # 25:26 - print first row of Twitter data
 
+# script: https://github.com/datyrlab/apache-spark/blob/master/04-mongodb-connector.py
+
 # PySpark - Open text file, import data CSV into an RDD - Part 3
 # https://youtu.be/pGiWdaQxpuQ
 

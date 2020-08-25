@@ -8,6 +8,8 @@
 # 19:29 - SQL new date columns added to dataframe... df.sql(...WHERE date BETWEEN '' AND '')
 # 26:36 - get the data and use a Python for loop to iterate through dataframe rows... df.rdd.collect()
 
+# script: https://github.com/datyrlab/apache-spark/blob/master/05-02-convert-string-to-date.py
+
 # install dependancies
 # sudo pip3 install colorama
 
