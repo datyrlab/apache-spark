@@ -23,9 +23,10 @@
 # install dependancies
 # sudo pip3 install colorama
 
-# JSON and CSV files are inside 
-# data/twitter_followers/the_moyc.json
-# data/twitter_friends/the_moyc.json
+# Download CSV and Twitter files
+# https://github.com/datyrlab/apache-spark/blob/master/data/netflix_titles.csv
+# https://github.com/datyrlab/apache-spark/blob/master/data/twitter_followers/the_moyc.json
+# https://github.com/datyrlab/apache-spark/blob/master/data/twitter_friends/the_moyc.json
 
 # PySpark - Date formatting, convert string to Timestamp Date Object - Part 5.2
 # https://youtu.be/skJ4kzmvVg0
