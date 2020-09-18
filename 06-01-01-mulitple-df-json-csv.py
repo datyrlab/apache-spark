@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
 ######################################
-# PySpark - Import multiple data from JSON, CSV and MongoDB - Part 6.1
+# PySpark - Import multiple DataFrames from JSON, CSV and MongoDB - Part 6.1
 # https://youtu.be/4cHTJihTHS4
-
 # 0:00 - intro
 # 2:57 - copy script from previous tutorial
 # 8:12 - import data json: reference path to Twitter files
