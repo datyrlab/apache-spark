@@ -20,6 +20,11 @@
 # script: https://github.com/datyrlab/apache-spark/blob/master/06-01-01-mulitple-df-json-csv.py
 # script: https://github.com/datyrlab/apache-spark/blob/master/06-01-02-mulitple-df-mongodb.py 
 
+# install dependancies
+# sudo pip3 install colorama
+
+# JSON and CSV files are inside the folder 'data'
+
 # PySpark - Date formatting, convert string to Timestamp Date Object - Part 5.2
 # https://youtu.be/skJ4kzmvVg0
 
