@@ -67,44 +67,18 @@ print(my_spark.catalog.listTables())
 print(Fore.WHITE + Back.MAGENTA + f"join")
 query = """
 SELECT
-    res.*
-FROM (
-    SELECT
-        fo.id_str AS id_str ,
-        fo.created_at AS created_at,
-        fo.created_at_date AS created_at_date,
-        fo.screen_name AS screen_name,
-        fo.followers_count AS followers_count,
-        fo.friends_count AS friends_count,
-        fr.screen_name AS fr_screen_name
-    FROM (
-        SELECT
-            id_str,
-            created_at,
-            created_at_date,
-            screen_name,
-            followers_count,
-            friends_count
-        FROM twitter_followers
-    ) AS fo
-    LEFT JOIN (
-        (
-        SELECT
-            id_str,
-            created_at,
-            created_at_date,
-            screen_name,
-            followers_count,
-            friends_count
-        FROM twitter_friends
-        ) AS fr
-    )
-    ON (fo.`screen_name` = fr.`screen_name`)
-) AS res
-WHERE res.`fr_screen_name` IS NULL
-AND res.`followers_count` > 200
-ORDER BY res.`followers_count` DESC
+    t1.id_str           AS id_str ,
+    t1.created_at       AS created_at,
+    t1.created_at_date  AS created_at_date,
+    t1.screen_name      AS screen_name,
+    t1.followers_count  AS followers_count,
+    t1.friends_count    AS friends_count,
+    t1.screen_name      AS fr_screen_name
 
+FROM twitter_followers AS t1
+LEFT JOIN twitter_friends AS t2
+ON t1.screen_name = t2.screen_name
+ORDER BY t1.followers_count DESC
 """
 
 df = my_spark.sql(query)
